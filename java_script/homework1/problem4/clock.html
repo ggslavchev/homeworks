@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="bg">
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <script>
+        var timer;
+        function startTimer() {
+            timer = setInterval(outputTime, 500);
+        }
+    </script>
+</head>
+<body onload="startTimer()">
+    <h1>The current time is:</h1>
+    <div id="output"></div>
+    <script>
+
+        function outputTime (){
+            var current_time = new Date();
+            document.getElementById('output').innerHTML = current_time.toLocaleTimeString('bg');
+        }
+    </script>
+</body>
+</html>

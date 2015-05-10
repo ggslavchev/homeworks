@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Webinar</title>
+    <LINK href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form action="get" id="mainForm" >
+        <h1>Регистрация за уебинар</h1>
+        <lable for="name">Име и Фамилия:<span id="req">*</span></lable>
+        <input type="text" id="name"/>
+
+        <lable for="address">Адрес:</lable>
+        <input type="text" id="address"/>
+
+        <lable for="town">Населено място:</lable>
+        <input type="text" id="town"/>
+
+        <lable for="postcode">Пощенски код:</lable>
+        <input type="text" id="postCode"/>
+
+        <lable for="email">Email:<span id="req">*</span></lable>
+        <input type="text" id="email"/>
+
+        <lable for="phone">Телефон:<span id="req">*</span></lable>
+        <input type="text" id="phone"/>
+
+        <lable for="date">Дата на семинара:<span id="req">*</span></lable>
+        <input type="date" id="date"/>
+
+
+        <input type="checkbox" id="invoice" onchange="showHideInvoice()"/>
+        <lable for="invoice">Желая фактура</lable>
+        <br/>
+
+        <lable for="firm" class="invData">Фирма/Организация:<span id="req">*</span></lable>
+        <input type="text" id="firm" class="invData">
+
+        <lable for="mol" class="invData">МОЛ:<span id="req">*</span></lable>
+        <input type="text" id="mol" class="invData"/>
+
+        <lable for="eik" class="invData">ЕИК:<span id="req">*</span></lable>
+        <input type="text" id="eik" class="invData"/>
+
+        <lable for="ddsN" class="invData">ИН по ДДС:<span id="req">*</span></lable>
+        <input type="text" id="ddsN" class="invData"/>
+
+        <lable for="firmAddress" class="invData">Адрес:<span id="req">*</span></lable>
+        <input type="text" id="firmAddress" class="invData"/>
+
+
+        <button id="registration">Регистрирай се</button>
+        <button id="clear">Изчисти</button>
+
+    </form>
+    <script src="script/webinar.js"></script>
+</body>
+</html>

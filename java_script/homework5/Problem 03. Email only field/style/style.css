@@ -1,0 +1,13 @@
+#input ,#output {
+    width: 250px;
+    height: 25px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+}
+#output {
+    border: 1px solid black;
+}
+#check {
+    height: 25px;
+}

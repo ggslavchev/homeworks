@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Quadratic equation</title>
+</head>
+<body>
+    <div>Input A
+    <input type="text" id="argA" value=""/></div><br/>
+    <div>Input B
+    <input type="text" id="argB" value=""/></div><br/>
+    <div>Input C
+    <input type="text" id="argC"value=""/></div>
+    <br/><br/>
+    <button type="submit" onclick="calculate()">Calc</button>
+    <br/>
+    <p id="output">Output: </p>
+    <script>
+        function calculate() {
+            var a = Number(document.getElementById("argA").value);
+            var b = Number(document.getElementById("argB").value);
+            var c = Number(document.getElementById("argC").value);
+            var d = b*b - 4*a*c;
+            if (!isNaN(d)){
+                if (d<0){
+                    document.getElementById("output").innerHTML = "Output: No real roots.";
+                }
+                else {
+                    if (d == 0) {
+                        var x = -b / (2 * a);
+                        document.getElementById("output").innerHTML = "Output: x = " + x;
+                    }
+                    else {
+                        var x2 = (-b+Math.sqrt(d)) / (2 * a);
+                        var x1 = (-b-Math.sqrt(d)) / (2 * a);
+                        document.getElementById("output").innerHTML = "Output: x1 = " + x1+", x2 = "+x2;
+                    }
+                }
+            }else{
+                document.getElementById("output").innerHTML = "Output: Wrong input data.";
+            }
+        }
+    </script>
+
+</body>
+</html>

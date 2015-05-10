@@ -1,0 +1,22 @@
+label, input {
+    display: block;
+    text-align: center;
+}
+h1 {
+    font-weight: bold;
+    font-size: 16px;
+}
+#invoice {
+    display: inline-block;
+}
+form {
+    width: 300px;
+    background-color: #FFF8F1;
+    padding-left: 100px;
+}
+#req {
+    color: red;
+}
+.invData {
+    visibility: hidden;
+}
