@@ -1,1 +1,1 @@
-# homeworks from sofuni basic course
+# Some homeworks from softuni basic course
